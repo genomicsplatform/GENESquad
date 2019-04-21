@@ -192,6 +192,7 @@ img.resize	{
 		body	{display: block;}
 		.pcenter { width: 90%; }
 		.pcenterpage { width: 90%; }
+		img.center	{width: 90%;}
 	}
 @media only screen and ( min-width: 30em )
 	{
