@@ -1,0 +1,207 @@
+body		{	
+				background-color: #d4edee;
+				font-family: "Times New Roman";
+				line-height: 30px;
+			}
+.header		{ 
+				text-align: center;
+				color: white;
+				font-family: Helvetica;
+				background-color: #154854;
+				font-size: 4em;			
+				padding: 6% 6% 0% 6%;
+				-webkit-animation: firstanimation 3s; /* Chrome, Safari, Opera */
+				animation: firstanimation 3s; 
+				}
+			
+/* To get animations to work with Chrome, Safari, Opera */
+@-webkit-keyframes firstanimation {
+									from {background-color: #d4edee;}
+									to {background-color:	#154854;}
+							}
+/* Regular syntax */
+keyframes firstanimation 		  {
+									from {background-color: #d4edee;}
+									to {background-color:	#154854;}
+							 }
+div.navigation		{ 
+					list-style-type: none;
+					margin: auto;
+					overflow: hidden;
+  					background-color: #154854;
+  					
+  					
+				}
+
+.buttons	{	
+				width: 250px; 
+				font-family: Helvetica;
+				text-align: center; 
+				background-color: #d4edee;
+  				border: 3px solid #154854;
+  				color: black;
+  				padding: 15px 12px;
+  				font-size: 17px;
+  				border-radius: 4px;
+  				cursor: pointer;
+  				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  				display: inline-block;
+  				-webkit-transition-duration: 0.6s; /* Chrome, Safari, Opera */
+  				transition-duration: 0.6s;
+			}
+			
+.buttons:hover	{
+				background-color: #154854;
+				color: white;
+}
+
+.blankbutton	{
+				width: 100px; 
+				text-align: center; 
+				background-color: #d4edee;
+  				border: none;
+  				padding: 10px 8px;
+  				font-size: 18px;
+  				display: inline-block;
+}
+
+nav {
+		background-color: #154854;
+		-webkit-animation: firstanimation 3s; /* Chrome, Safari, Opera */
+		animation: firstanimation 3s;
+}
+
+div.color {
+			background-color: #154854;
+}
+
+li	{list-style-type: none;}
+
+.navigation a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  padding: 53px 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdownbutton {
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Times New Roman";
+  background-color: #154854;
+  margin: 0;
+}
+
+.dropdownmenu {
+  visibility: hidden;
+  position: absolute;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border-radius: 2px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0;
+  filter:alpha(opacity=0);
+  -webkit-transition-duration: 1.0s; /* Chrome, Safari, Opera */
+  transition-duration: 1.0s;
+}
+
+.dropdownmenu a {
+  float: none;
+  color: black;
+  font-size: 16px;
+  padding: 12px 60px 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdownmenu {
+  visibility: visible;
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+
+.arrow { 
+ 			width: 0; 
+			height: 0; 
+ 			border-left: 6px solid transparent; 
+ 			border-right: 6px solid transparent; 
+			border-top: 7px solid white; 
+			display: inline-block;
+ 		} 
+ 
+
+h1	{	text-align: center; font-size: 3em; padding: 10px 0px 0px 0px; }
+h2 	{	text-align: center; }
+
+a:hover	{ color: #4f94cd; cursor: pointer; -webkit-transition-duration: 0.6s; /* Chrome, Safari, Opera */ transition-duration: 0.6s;}
+a.normal:hover	{-webkit-transition-duration: 0s; /* Chrome, Safari, Opera */ transition-duration: 0s;}
+
+footer	{ 
+			text-align: center;
+		}
+.horizontal	{ 
+				float: clear;
+				display: block;
+				width: 99%;
+			}
+.pcenter	{	
+				width: 60%;
+				padding: 20px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 5%;
+				text-align: left;
+			}
+.pcenterpage	{
+					width: 60%;
+					padding: 10px;
+					margin-right: auto;
+					margin-left: auto;
+					margin-bottom: 5%;
+					text-align: center;
+				}
+img.center	{
+				display: block;
+				margin: auto;
+				width: 60%;
+				min-width: 400px;
+				min-height: 100px;
+			}
+img.resize	{
+				float: left;
+				padding: 0px 0px;
+				position: relative;
+				display: inline;
+				width:128px; 
+				height:128px
+}
+
+
+@media only screen and ( min-width: 0em )
+	{	
+		body	{display: block;}
+		.pcenter { width: 90%; }
+		.pcenterpage { width: 90%; }
+	}
+@media only screen and ( min-width: 30em )
+	{
+		.pcenter	{ width: 60%; }
+		.pcenterpage { width: 60%; }
+
+	}
+@media only screen and ( min-width: 48em )
+	{	
+		body	{
+					width: 99%;
+				}
+	}
